@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import DialogBox from "../dialogBox/page"
-
+import { Image } from "next/image";
 const GetData = () => {
 
 
@@ -162,7 +162,7 @@ const GetData = () => {
 
                                 <div className="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4">
                                     <div className="min-h-[206px]">
-                                        <img src={recipe.image} className="w-full" />
+                                        <Image alt={"image"} src={recipe.image} className="w-full" />
                                     </div>
                                     <div className="p-6">
                                         <h3 className="text-gray-800 text-xl font-bold">{recipe.name}</h3>
